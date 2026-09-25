@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Registeration Details</title>
+    </head>
+    <body>
+        <h1>Registeration Form</h1>
+        <form id="RegisterationForm" action="success.html" method="get">
+            <label>Full Name:</label>
+            <input type="text" name="Fullname" id="Fullname">
+            <br></br>
+            <label>User Name:</label>
+            <input type="text" name="UserName" id="UserName">
+            <br></br> 
+            <label>Email:</label>
+            <input type="Email" name="Email" id="Email">
+            <br></br>
+            <label>Password:</label>
+            <input type="password" name="password" id="Password">
+            <br></br>
+            <label>confirm password:</label>
+            <input type="password" name="confirmpassword" id="confirmpassword">
+            <br></br>
+            <label>Phone Number:</label>
+            <input type="tel" name="Phnno" id="phnno">
+            <br></br>
+            <label>DOB:</label>
+            <input type="DATE" name="DOB" id="DOB">
+            <br></br>
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="Gender">male
+            <input type="radio" name="gender" id="Gender">female
+            <br></br>
+             <label>Address:</label>
+            <textarea name="Address" rowspan="30" colspan="40" id="Address"></textarea>
+            <br></br>
+            <label>city:</label>
+            <input type="text" name="city" id="city">
+            <br></br>
+
+              <label>State:</label>
+            <select id="State">
+                <option>---select state---</option>
+                <option>Andhra Pradesh</option>
+                <option>Telangana</option>
+                <option>Uttar Pradesh</option>
+                <option>Tamil Nadu</option>
+            </select>
+            <br></br>
+            <label>Country:</label>
+             <select id="Country">
+                <option>---select state---</option>
+                <option>India</option>
+                <option>America</option>
+                <option>Russia</option>
+                <option>Africa</option>
+            </select>
+            <br></br>
+             <label>Pincode:</label>
+            <input type="number" name="Pincode" id="Pincode">
+            <br></br>
+             <label>Upload Profile Picture:</label>
+            <input type="file" name="pp" id="pp" optional>
+            <br></br>
+             <label>Hobbies:</label>
+            <input type="checkbox" name="hobby" value="Reading" id="hobby">Reading
+            <input type="checkbox" name="hobby" value="Singing" id="hobby">Singing
+            <input type="checkbox" name="hobby" value="Dancing" id="hobby">Dancing
+            <br></br>
+            <input type="checkbox" name="terms" id="T&C">
+            <label>I Agree Terms & Conditions</label>
+            <br></br>
+            <input type="Submit" value="Register" method="Get" id="register">
+            <input type="reset" value="reset" id="reset">
+            <br></br>
+        </form>
+            <script>
+                document.getElementById("RegisterationForm")
+                  .addEventListener("Submit",function(event){
+                    let Fullname=document.getElementById("Fullname").value;
+                    console.log(Fullname)
+                })
+            </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <p>Hello</p>
+        <p>Welcome</p>
+        <p>Java Script</p>
+        <button id="update">check</button>
+
+        <p id="count">0</p>
+        <button class="btn">increment</button><br></br>
+        <button class="btn">decrement</button>
+        <script>
+            
+            count=document.getElementById('count')
+            button=document.getElementsByClassName('btn')[0]
+            button2=document.getElementsByClassName('btn')[1]
+            button.addEventListener("click",
+             function(){
+                 count.textContent=Number(count.textContent)+1
+             }
+             )
+             button2.addEventListener("click",
+             function(){
+                 count.textContent=Number(count.textContent)-1
+             }
+             )
+             para=document.getElementsByTagName("p")
+             console.log(para)
+             for(let i=0;i<para.length;i++){
+                console.log(para[i].textContent)
+             }
+             btn=document.getElementById('update')
+             btn.addEventListener("click",function(){
+                para[0].textContent="Hi"
+                para[1].textContent="welcome"
+                para[2].textContent="CSS"
+                for(let i=0;i<para.length;i++){
+                console.log(para[i].textContent)
+             }
+             })
+</script> 
+    </body>
+</html>

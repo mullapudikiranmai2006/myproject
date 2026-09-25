@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Successful</title>
+</head>
+
+<body>
+
+    <h2>Registration Successful</h2>
+
+    <p id="message"></p>
+
+    <script>
+
+        let params =
+            new URLSearchParams(window.location.search);
+
+        let Fullname =
+            params.get("Fullname");
+
+        document.getElementById("message").innerHTML =
+            Fullname + " Registered Successfully";
+
+    </script>
+
+</body>
+
+</html>
